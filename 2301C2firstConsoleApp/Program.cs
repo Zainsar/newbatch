@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 
 //Console.WriteLine("Hello, Haris!");
 
@@ -250,33 +250,171 @@ while ( j <= 10)
 //int lastindex = Array.LastIndexOf(evenNumber, 2);
 //Console.WriteLine(lastindex);
 
-int[] evenNumber = new int[6];
+//int[] evenNumber = new int[6];
 
-for (int i = 0; i < evenNumber.Length; i++)
-{
-    int num;
-    do
-    {
-        Console.WriteLine($"Please enter value {i + 1} for the even numbers array:");
-        string input = Console.ReadLine();
-        if (!int.TryParse(input, out num))
-        {
-            Console.WriteLine("Please enter a valid integer.");
-            continue;
-        }
-        if (num % 2 != 0)
-        {
-            Console.WriteLine("Please enter an even number.");
-            continue;
-        }
-        evenNumber[i] = num;
-        break;
-    } while (true);
-}
+//for (int i = 0; i < evenNumber.Length; i++)
+//{
+//    int num;
+//    do
+//    {
+//        Console.WriteLine($"Please enter value {i + 1} for the even numbers array:");
+//        string input = Console.ReadLine();
+//        if (!int.TryParse(input, out num))
+//        {
+//            Console.WriteLine("Please enter a valid integer.");
+//            continue;
+//        }
+//        if (num % 2 != 0)
+//        {
+//            Console.WriteLine("Please enter an even number.");
+//            continue;
+//        }
+//        evenNumber[i] = num;
+//        break;
+//    } while (true);
+//}
 
-Console.WriteLine("Your Entered Array is:");
+//Console.WriteLine("Your Entered Array is:");
 
-for (int a = 0; a < evenNumber.Length; a++)
-{
-    Console.WriteLine(evenNumber[a]);
-}
+//for (int a = 0; a < evenNumber.Length; a++)
+//{
+//    Console.WriteLine(evenNumber[a]);
+//}
+
+//Console.WriteLine("Enter Your obt Marks");
+//double obtmarks = Double.Parse(Console.ReadLine());
+
+//Console.WriteLine("Enter Your TotalMarks");
+//double total_marks = Double.Parse(Console.ReadLine());
+
+//void percentage()
+//{
+
+//    if (obtmarks > total_marks)
+//    {
+//        Console.WriteLine("Please Enter Valid ObtainMarks Number");
+//    }
+//    else
+//    {
+//        double percentage = obtmarks * 100 / total_marks;
+//        var zain = Double.Round(percentage, 2);
+//        Console.WriteLine($"Your Percentage is {zain}");
+//    }
+//}
+//percentage();
+
+//LIST
+
+//List<string> Mobiles = new List<string>();
+//string userinput;
+
+//do
+//{
+//    Console.WriteLine("Enter your mobile name");
+
+//    userinput = (Console.ReadLine()).ToLower();
+//    if (userinput != "no")
+//    {
+//        Mobiles.Add(userinput);
+//    }
+
+//}
+//while (userinput != "no");
+
+//foreach (var item in Mobiles)
+//{
+//    Console.WriteLine(item);
+//}
+
+//Queue
+//fifo 
+using System.Collections;
+
+//Queue<string> name = new Queue<string>();
+
+//name.Enqueue("Zain");
+//name.Enqueue("Ali");
+//name.Enqueue("hassan");
+//name.Enqueue("Waqar");
+//name.Enqueue("Musa");
+//name.Enqueue("Talha");
+
+//name.Dequeue();
+//name.Dequeue();
+//name.Dequeue();
+
+//foreach (var item in name)
+//{
+//    Console.WriteLine(item);
+//}
+
+//lifo
+//stack
+//Stack<string> name = new Stack<string>();
+
+//name.Push("Zain");
+//name.Push("Ali");
+//name.Push("hassan");
+//name.Push("Waqar");
+//name.Push("Musa");
+//name.Push("Talha");
+
+//name.Pop();
+//name.Pop();
+//name.Pop();
+
+//foreach (var item in name)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+//non genric
+//arraylist
+//ArrayList address = new ArrayList();
+
+//address.Add("North Karachi");
+//address.Add("Sector 5c3");
+//address.Add("street no 136");
+//address.Add("L-354");
+
+//ArrayList person = new ArrayList();
+
+//person.Add("Zain Sarfraz");
+//person.Add(21);
+//person.Add(03172667345);
+//person.Add("Node Js Developer");
+//person.Remove(21);
+//person.RemoveAt(0);
+//person.RemoveRange(2,2);
+//person.AddRange(address);
+//person.Clear();
+//person.Contains("Node Js Developer");
+
+//Console.WriteLine(person[2]);
+
+//foreach (var item in person)
+//{
+//    Console.WriteLine(item);
+//}
+
+//ArrayList Mobiles = new ArrayList();
+//string userinput;
+
+//do
+//{
+//    Console.WriteLine("Enter your Specification");
+
+//    userinput = (Console.ReadLine()).ToLower();
+//    if (userinput != "ok")
+//    {
+//        Mobiles.Add(userinput);
+//    }
+
+//}
+//while (userinput != "ok");
+
+//foreach (var item in Mobiles)
+//{
+//    Console.WriteLine(item);
+//}
