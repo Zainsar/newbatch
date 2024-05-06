@@ -418,3 +418,53 @@ using System.Collections;
 //{
 //    Console.WriteLine(item);
 //}
+
+// |Dictionary (Generic) (key:value)
+
+//Dictionary<string, string> accersiors = new Dictionary<string, string>();
+
+//accersiors.Add("Product 1", "Charger");
+//accersiors.Add("Product 2", "Data Cable");
+//accersiors.Add("Product 3", "USB");
+//accersiors.Add("Product 4", "Handfree");
+//accersiors.Add("Product 5", "Smart Watch");
+//accersiors.Add("Product 6", "BackCover");
+//accersiors.Remove("Product 5");
+
+//Console.WriteLine(accersiors.ContainsKey("Product 3"));
+//Console.WriteLine(accersiors.ContainsValue("USB"));
+
+//Console.WriteLine(accersiors["Product 4"]);
+
+//for (int i = 1; i <= 6; i++)
+//{
+//    Console.WriteLine(accersiors["Product "+i]);
+
+//}
+
+//foreach (var item in accersiors)
+//{
+//    string[] test = item.ToString().Split(","); // return an array
+//    string key = test[0].Trim('[');
+//    string value = test[1].Trim(']');
+//    Console.WriteLine("This is key : {0} and This is value : {1}",key,value);
+//    //Console.WriteLine(key);
+//    //Console.WriteLine(value);
+//}
+
+
+//HashTable (NON-Generic) (key:value) searching()
+
+//Hashtable singer = new Hashtable();
+
+//singer.Add("top 1" , "Rahat Fateh ali khan");
+//singer.Add(2 , "atif aslam");
+//singer.Add(3.0 , "Zain");
+//singer.Add(false , 123);
+
+//foreach (DictionaryEntry item in singer)
+//{
+//    Console.WriteLine(item.Key+":"+item.Value);
+//}
+
+//Console.WriteLine(singer.GetHashCode());
