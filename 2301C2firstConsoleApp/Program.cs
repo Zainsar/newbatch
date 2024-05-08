@@ -468,3 +468,118 @@ using System.Collections;
 //}
 
 //Console.WriteLine(singer.GetHashCode());
+
+//string method
+
+//string test = "we are learning c#";
+//Console.WriteLine(test.Replace("learning" , "Mastering"));
+//Console.WriteLine(test.ToLower());
+//Console.WriteLine(test.ToUpper());
+
+//string[] abc = test.Split("-");
+//Console.WriteLine(abc);
+//Console.WriteLine(test.Trim('-'));
+
+
+//class object
+
+//Class1 cl = new Class1();
+//Class1 cl1 = new Class1("Syed Muhammad Zain"," Sarfraz");
+//Class1 cl2 = new Class1("Syed Muhammad Zain", "Sarfraz", "22");
+//Console.WriteLine(cl1);
+//cl2.FirstName = "Syed Muhammad Zain";
+//cl2.LastName = "Sarfraz";
+//cl2.Age = "22";
+//cl.msg3();
+//cl.num1 = 50;
+//cl.num2 = 40;
+//cl.add();
+
+//class Class1
+//    {
+//        public int num1;
+//        public int num2;
+
+//        // Constructor Function
+//        public Class1()
+//        {
+//            Console.WriteLine("\nConstructor Function");
+//        }
+
+//        public Class1(string cons)
+//        {
+//            Console.WriteLine("\nSecond Constructor Function" + cons);
+//        }
+
+//        public Class1(string cons1, string cons2)
+//        {
+//            Console.WriteLine("\nThird Constructor Function" + cons1 + cons2);
+//        }
+
+//// multiple Constructor
+//public string FirstName;
+//public string LastName;
+//public string Age;
+//public Class1()
+//{
+//    Console.WriteLine("\nInitialized the object");
+//}
+
+//public Class1(string fname, string lname) : this()
+//{
+//    this.FirstName = fname;
+//    this.LastName = lname;
+//    Console.WriteLine($"\n First Name = {fname} ,lastName = {lname}");
+//}
+
+//public Class1(string fname, string lname, string age) : this(fname, lname)
+//{
+//    this.Age = age;
+//    Console.WriteLine($"\nAge= {age} ");
+//}
+//public void msg3()
+//{
+//    Console.WriteLine("\nStudent Class 1");
+//}
+//public void add()
+//{
+//    Console.WriteLine(num1 + num2);
+//}
+//}
+
+
+//person abc = new person();
+//Console.WriteLine(abc.Fname);
+
+//abc.Fname = "Zain Shah";
+//abc.number = "03172667345";
+//abc.address = "north";
+//abc.age = 22;
+
+//Console.WriteLine(abc.Fname);
+//Console.WriteLine(abc.number);
+//Console.WriteLine(abc.address);
+//Console.WriteLine(abc.age);
+
+//person zain = new person("\n\n\nZain Sarfraz" , "03172667345" , "l-354" , 21);
+//class person
+//{
+//    public string Fname, number, address;
+//    public int age;
+
+//    public person()
+//    {
+//        this.Fname = "Zain";
+//        this.number = "03172667345";
+//        this.address = "hopuse no l-354";
+//        this.age = 22;
+//    }
+
+//    public person(string Fname , string number , string add , int age)
+//    {
+//        this.Fname = Fname;
+//        this.number = number;
+//        this.address = add;
+//        this.age = age;
+//    }
+//}
