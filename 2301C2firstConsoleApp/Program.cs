@@ -329,6 +329,7 @@ while ( j <= 10)
 //Queue
 //fifo 
 using System.Collections;
+using System.Threading.Channels;
 
 //Queue<string> name = new Queue<string>();
 
@@ -583,3 +584,249 @@ using System.Collections;
 //        this.age = age;
 //    }
 //}
+
+//OOP (object oriented programming)
+//Inheritance
+
+
+//Vehicle accord = new Vehicle();
+//accord.run();
+
+//Car camry = new Car("Toyoto Camry", "2024", "v8", "320 kph");
+//camry.run();
+//camry.stop();
+
+////Parent Class (Base Class)(Super Class)
+//public class Vehicle
+//{
+//    public string speed;
+
+//   public void run()
+//    {
+//        Console.WriteLine("Vehicle starting running");
+//    }
+//    public void stop()
+//    {
+//        Console.WriteLine("Vehicle is stopped");
+//    }
+//}
+
+////Child Class (Sub Class)(Derived Class)
+////Class car extends class
+
+//class Car : Vehicle
+//{
+
+//    public string name;
+//    public string model;
+//    public string power;
+
+//    public Car(string name, string model, string power, string speed)
+//    {
+//        this.name = name;
+//        this.model = model;
+//        this.power = power;
+//        this.speed = speed;
+//    }
+
+//    //over riding run & stop
+//    public void run()
+//    {
+//        Console.WriteLine($" {this.name} is running at {this.speed}");
+//    }
+
+//    public void stop()
+//    {
+//        Console.WriteLine($" {this.name} is stopped with drift");
+//    }
+//}
+
+////task !!!
+//Vehicle accord = new Vehicle();
+//accord.run();
+
+//ECar tesla = new ECar("Corolla", "high", "Onechargemileage");
+//tesla.run();
+//tesla.stop();
+
+////grand parent
+//public class Vehicle
+//{
+//    public string speed;
+
+//    public void run()
+//    {
+//        Console.WriteLine("starting running");
+//    }
+//    public void stop()
+//    {
+//        Console.WriteLine("is stopped");
+//    }
+//}
+
+////parent
+//class Car : Vehicle
+//{
+
+//    public string name;
+
+//}
+////child
+//class ECar : Car
+//{
+
+//    public string battery;
+
+
+//    public ECar(string name, string battery, string speed)
+//    {
+//        this.name = name;
+//        this.battery = battery;
+//        this.speed = speed;
+//    }
+
+//    public void run()
+//    {
+//        Console.WriteLine($" {this.name} is running at {this.speed} & its battery {this.battery}");
+//    }
+
+//    public void stop()
+//    {
+//        Console.WriteLine($" {this.name} is stopped low speed");
+//    }
+//}
+
+//frontendDeveloper Zain = new frontendDeveloper();
+//Zain.basicDesign();
+//Zain.complexDesign();
+
+
+//backendDeveloper zain = new backendDeveloper();
+//zain.basicCrud();
+//zain.complexAPIs("Zain");
+
+//FullStack full = new FullStack();
+//full.LearningSession();
+//full.basicDesign();
+//full.complexDesign();
+//full.basicCrud();
+//full.complexAPIs("Zain");
+
+manager Depart = new manager();
+manager.welcome();
+Depart.ProjectManager();
+Depart.Marketing();
+Depart.HR();
+Depart.Hr();
+Depart.IT();
+Depart.Teamleader();
+
+//interface ()
+//interface FrontEndDevelopment
+//{
+//    void basicDesign();
+//    void complexDesign();
+//}
+//interface backendDevelopment
+//{
+//    void basicCrud();
+//    void complexAPIs(string devName);
+//}
+//public class frontendDeveloper : FrontEndDevelopment
+//{
+//    public void basicDesign()
+//    {
+//        Console.WriteLine("We Will provide you a basic design using Html Css Javascript");
+//    }
+//    public void complexDesign()
+//    {
+//        Console.WriteLine("We Will provide you completeDesign using ReactJs and Vue or Nextjs");
+//    } 
+//}
+//public class backendDeveloper : backendDevelopment
+//{
+//    public void basicCrud()
+//    {
+//        Console.WriteLine("We Will provide you a basic Crud using Nodejs PHP Pyton");
+//    }
+//    public void complexAPIs(string devName)
+//    {
+//        Console.WriteLine($"{devName} Will provide you ComplexAPIs using Nodejs and Pyton");
+//    }
+//}
+
+//public class FullStack : FrontEndDevelopment  , backendDevelopment
+//{
+//    public void basicDesign()
+//    {
+//        Console.WriteLine("We Will provide you a basic design using Html Css Javascript");
+//    }
+//    public void complexDesign()
+//    {
+//        Console.WriteLine("We Will provide you completeDesign using ReactJs and Vue or Nextjs");
+//    }
+//    public void basicCrud()
+//    {
+//        Console.WriteLine("We Will provide you a basic Crud using Nodejs PHP Pyton");
+//    }
+//    public void complexAPIs(string devName)
+//    {
+//        Console.WriteLine($"{devName} Will provide you ComplexAPIs using Nodejs and Pyton");
+//    }
+//    public void LearningSession()
+//    {
+//        Console.WriteLine("Sab Parh Liya Humne ");
+//    }
+//}
+
+interface Admin
+{
+    void IT();
+    void HR();
+}
+interface IT
+{
+    void Hr();
+    void Marketing();
+}
+interface HR
+{
+    void ProjectManager();
+    void Teamleader();
+}
+
+abstract public class Office : Admin, IT, HR
+{
+    public void IT()
+    {
+        Console.WriteLine("I'm From IT Department");
+    }
+    public void HR()
+    {
+        Console.WriteLine("I'm From HR Department");
+    }
+    public void Hr()
+    {
+        Console.WriteLine("I'm From Hr Department");
+    }
+    public void Marketing()
+    {
+        Console.WriteLine("I'm From Marketing Department");
+    }
+    public void ProjectManager()
+    {
+        Console.WriteLine("I'm Project Manager");
+    }
+    public void Teamleader()
+    {
+        Console.WriteLine("I'm Teamleader");
+    }
+}
+
+public class manager : Office
+{
+    static public void welcome()
+    {
+        Console.WriteLine("Welcome Manager");
+    }
+}
