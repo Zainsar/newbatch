@@ -712,14 +712,14 @@ using System.Threading.Channels;
 //full.basicCrud();
 //full.complexAPIs("Zain");
 
-manager Depart = new manager();
-manager.welcome();
-Depart.ProjectManager();
-Depart.Marketing();
-Depart.HR();
-Depart.Hr();
-Depart.IT();
-Depart.Teamleader();
+//manager Depart = new manager();
+//manager.welcome();
+//Depart.ProjectManager();
+//Depart.Marketing();
+//Depart.HR();
+//Depart.Hr();
+//Depart.IT();
+//Depart.Teamleader();
 
 //interface ()
 //interface FrontEndDevelopment
@@ -779,54 +779,149 @@ Depart.Teamleader();
 //    }
 //}
 
-interface Admin
+//interface Admin
+//{
+//    void IT();
+//    void HR();
+//}
+//interface IT
+//{
+//    void Hr();
+//    void Marketing();
+//}
+//interface HR
+//{
+//    void ProjectManager();
+//    void Teamleader();
+//}
+
+//abstract public class Office : Admin, IT, HR
+//{
+//    public void IT()
+//    {
+//        Console.WriteLine("I'm From IT Department");
+//    }
+//    public void HR()
+//    {
+//        Console.WriteLine("I'm From HR Department");
+//    }
+//    public void Hr()
+//    {
+//        Console.WriteLine("I'm From Hr Department");
+//    }
+//    public void Marketing()
+//    {
+//        Console.WriteLine("I'm From Marketing Department");
+//    }
+//    public void ProjectManager()
+//    {
+//        Console.WriteLine("I'm Project Manager");
+//    }
+//    public void Teamleader()
+//    {
+//        Console.WriteLine("I'm Teamleader");
+//    }
+//}
+
+//public class manager : Office
+//{
+//    static public void welcome()
+//    {
+//        Console.WriteLine("Welcome Manager");
+//    }
+//}
+
+//watch apple = new watch("Apple",56000, "Black");
+//Console.WriteLine(apple.model);
+//apple();
+
+//SmartWatch apple2 = new SmartWatch("apple2",60000, "green",true);
+//apple2.showWatch();
+//public class watch
+//{
+//    public string? model;
+//    private int price;
+//    protected string color;
+
+//    public watch (string? model, int price, string color)
+//    {
+//        this.model = model;
+//        this.price = price;
+//        this.color = color;
+//    }
+
+//    public void showprice()
+//    {
+//        Console.WriteLine(this.price);
+//    }
+//    public void showcolor()
+//    {
+//        Console.WriteLine(this.color);
+//    }
+//}
+
+//public class SmartWatch : watch
+//{
+//    public Boolean canCall;
+
+//    public SmartWatch(string model , int price , string color , Boolean canCall) : base(model, price, color)
+//    {
+//        this.canCall = canCall;
+//    }
+
+//    public void showWatch()
+//    {
+//        Console.WriteLine(this.model);
+//        this.showprice();
+//        Console.WriteLine(this.color);
+//        Console.WriteLine(this.canCall);
+//    }
+//}
+
+//task
+Bike motorcycle = new Bike("Unique", 100000, "Red");
+Console.WriteLine(motorcycle.model);
+Console.WriteLine(motorcycle);
+
+CGBike heavyBike = new CGBike("SuperPower", 160000, "Red", true);
+heavyBike.showBike();
+public class Bike
 {
-    void IT();
-    void HR();
-}
-interface IT
-{
-    void Hr();
-    void Marketing();
-}
-interface HR
-{
-    void ProjectManager();
-    void Teamleader();
+    public string? model;
+    private int price;
+    protected string color;
+
+    public Bike(string? model, int price, string color)
+    {
+        this.model = model;
+        this.price = price;
+        this.color = color;
+    }
+
+    public void showprice()
+    {
+        Console.WriteLine(this.price);
+    }
+    public void showcolor()
+    {
+        Console.WriteLine(this.color);
+    }
 }
 
-abstract public class Office : Admin, IT, HR
+public class CGBike : Bike
 {
-    public void IT()
-    {
-        Console.WriteLine("I'm From IT Department");
-    }
-    public void HR()
-    {
-        Console.WriteLine("I'm From HR Department");
-    }
-    public void Hr()
-    {
-        Console.WriteLine("I'm From Hr Department");
-    }
-    public void Marketing()
-    {
-        Console.WriteLine("I'm From Marketing Department");
-    }
-    public void ProjectManager()
-    {
-        Console.WriteLine("I'm Project Manager");
-    }
-    public void Teamleader()
-    {
-        Console.WriteLine("I'm Teamleader");
-    }
-}
+    public Boolean canCall;
 
-public class manager : Office
-{
-    static public void welcome()
+    public CGBike(string model, int price, string color, Boolean canCall) : base(model, price, color)
     {
-        Console.WriteLine("Welcome Manager");
+        this.canCall = canCall;
+    }
+
+    public void showBike()
+    {
+        Console.WriteLine(this.model);
+        this.showprice();
+        Console.WriteLine(this.color);
+        Console.WriteLine(this.canCall);
     }
 }
