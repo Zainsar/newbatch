@@ -330,6 +330,7 @@ while ( j <= 10)
 //fifo 
 using System.Collections;
 using System.Threading.Channels;
+using System.Xml.Schema;
 
 //Queue<string> name = new Queue<string>();
 
@@ -879,49 +880,147 @@ using System.Threading.Channels;
 //}
 
 //task
-Bike motorcycle = new Bike("Unique", 100000, "Red");
-Console.WriteLine(motorcycle.model);
-Console.WriteLine(motorcycle);
+//Bike motorcycle = new Bike("Unique", 100000, "Red");
+//Console.WriteLine(motorcycle.model);
+//Console.WriteLine(motorcycle);
 
-CGBike heavyBike = new CGBike("SuperPower", 160000, "Red", true);
-heavyBike.showBike();
-public class Bike
+//CGBike heavyBike = new CGBike("SuperPower", 160000, "Red", true);
+//heavyBike.showBike();
+//public class Bike
+//{
+//    public string? model;
+//    private int price;
+//    protected string color;
+
+//    public Bike(string? model, int price, string color)
+//    {
+//        this.model = model;
+//        this.price = price;
+//        this.color = color;
+//    }
+
+//    public void showprice()
+//    {
+//        Console.WriteLine(this.price);
+//    }
+//    public void showcolor()
+//    {
+//        Console.WriteLine(this.color);
+//    }
+//}
+
+//public class CGBike : Bike
+//{
+//    public Boolean canCall;
+
+//    public CGBike(string model, int price, string color, Boolean canCall) : base(model, price, color)
+//    {
+//        this.canCall = canCall;
+//    }
+
+//    public void showBike()
+//    {
+//        Console.WriteLine(this.model);
+//        this.showprice();
+//        Console.WriteLine(this.color);
+//        Console.WriteLine(this.canCall);
+//    }
+//}
+
+//delegate
+
+//maths.Calculate cal;
+
+//cal = maths.add;
+//cal(50, 50);
+
+//cal = maths.sub;
+//cal(50, 60);
+
+//cal = maths.multiply;
+//cal(50, 50);
+
+//cal = maths.divided;
+//cal(50, 50);
+
+//public class maths
+//{
+//    public delegate void Calculate(double num1, double num2);
+
+//        public static void add(double num1, double num2)
+//    {
+//        Console.WriteLine(num1 + num2);
+//    }
+//    public static void sub(double num1, double num2)
+//    {
+//        Console.WriteLine(num1 - num2);
+//    }
+//    public static void multiply(double num1, double num2)
+//    {
+//        Console.WriteLine(num1 * num2);
+//    }
+//    public static void divided(double num1, double num2)
+//    {
+//        if(num1 != 0) 
+//        {  
+//            Console.WriteLine(num1 / num2);
+//        }
+//        else
+//        {
+//            Console.WriteLine("Method wrong");
+//        }
+//    }
+//}
+
+
+//Getter and setter (encapsulation)
+
+//burger majestic = new burger("Zinger", 300);
+//Console.WriteLine(majestic.name);
+//Console.WriteLine(majestic.Price);
+
+//public class burger
+//{
+//    public string name;
+//    private int price;
+//    //public int Price { get; set; } //AutoComplete property
+
+//    public int Price
+//    {
+//        get
+//        {
+//            return price;
+//        }
+//        set
+//        {
+//            if (value <= 2000) 
+//            {            
+//                price = value;
+//            }
+//            else
+//            {
+//                price = 2000;
+//            }
+//        }
+
+//    }
+
+//    public burger(string name, int price) 
+//    {
+//        this.name = name;
+//        this.price = price;
+//    }
+//}
+
+//enums (collection of constant integars);
+
+Console.WriteLine(players.sarfraz + " has " + (int)players.sarfraz + " jersey Number ");
+enum players
 {
-    public string? model;
-    private int price;
-    protected string color;
-
-    public Bike(string? model, int price, string color)
-    {
-        this.model = model;
-        this.price = price;
-        this.color = color;
-    }
-
-    public void showprice()
-    {
-        Console.WriteLine(this.price);
-    }
-    public void showcolor()
-    {
-        Console.WriteLine(this.color);
-    }
-}
-
-public class CGBike : Bike
-{
-    public Boolean canCall;
-
-    public CGBike(string model, int price, string color, Boolean canCall) : base(model, price, color)
-    {
-        this.canCall = canCall;
-    }
-
-    public void showBike()
-    {
-        Console.WriteLine(this.model);
-        this.showprice();
-        Console.WriteLine(this.color);
-        Console.WriteLine(this.canCall);
-    }
+    saim = 55,
+    baber = 60,
+    rizwan = 90,
+    sarfraz = 100,
+    umar = 59,
+    shoaib = 99
 }
