@@ -1,4 +1,4 @@
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 //Console.WriteLine("Hello, Haris!");
 
@@ -1014,13 +1014,114 @@ using System.Xml.Schema;
 
 //enums (collection of constant integars);
 
-Console.WriteLine(players.sarfraz + " has " + (int)players.sarfraz + " jersey Number ");
-enum players
-{
-    saim = 55,
-    baber = 60,
-    rizwan = 90,
-    sarfraz = 100,
-    umar = 59,
-    shoaib = 99
-}
+//Console.WriteLine(players.sarfraz + " has " + (int)players.sarfraz + " jersey Number ");
+//enum players
+//{
+//    saim = 55,
+//    baber = 60,
+//    rizwan = 90,
+//    sarfraz = 100,
+//    umar = 59,
+//    shoaib = 99
+//}
+
+//record ,indexers , namespace
+
+//record
+
+//person a = new person();
+//a.Name = "Zain";
+//a.age = 21;
+
+//Console.WriteLine(a.age);
+
+//person aa = new person();
+//aa.Name = "Zain";
+//aa.age = 21;
+
+//Console.WriteLine(a == aa);
+
+//createing object of record class
+//person2 b = new person2();
+//b.Name = "Zain";
+//b.age = 21;
+
+//Console.WriteLine(b);
+
+//person2 bb = new person2();
+//bb.Name = "Zain";
+//bb.age = 21;
+
+//Console.WriteLine(b == bb);
+
+
+//public class person
+//{
+//    public string? Name { get; set; }
+//    public int? age { get; set; }
+//}
+
+//public record person2
+//{
+//    public string? Name { get; set; }
+//    public int? age { get; set; }
+//}
+
+//indexer
+
+//superheros fav3 = new superheros();
+//fav3[0] = "IronMan";
+//fav3[1] = "SuperMan";
+//fav3[2] = "BedMan";
+
+//Console.WriteLine(fav3[2]);
+
+//public class superheros
+//{
+//    public string[] superNames = new string[3];
+
+//    public string this[int i]
+//    {
+//        get
+//        {
+//            return superNames[i];
+//        }
+//        set
+//        {
+//            superNames[i] = value;
+//        }
+//    }
+//}
+
+//namespace (Collection of related classess)
+
+using System;
+using System.Collections;
+using System.Reflection.Metadata;
+
+using _2301C2firstConsoleApp;
+
+////tooltax
+//Vehicle toyota = new Vehicle()
+//{
+//    name = "Toyota Corolla",
+//    regno = 2024
+//};
+
+//tooltax a = new tooltax()
+//{
+//    amount = 5,
+//    isPaid = false
+//};
+
+//Console.WriteLine(a.isPaid);
+//Console.WriteLine(toyota.regno);
+
+//recording
+
+Recording rec = new Recording();
+
+rec.Name = "Zain";
+rec.age = 21;
+
+Console.WriteLine(rec.Name);
