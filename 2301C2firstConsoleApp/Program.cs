@@ -1172,15 +1172,19 @@ public class Game
     public void play()
     {
         Console.WriteLine("Please Enter The Name");
-        var name = Console.ReadLine();
+        var name = "";
         do
         {
-            boost();
+           name = Console.ReadLine();
+            if (name.ToLower() == "zain")
+            {
+             boost();
             Console.WriteLine(name + " Play The Game");
             System.Threading.Thread.Sleep(500);
             break;
+            }
         }
-        while (name == "Zain");
+        while (name != "");
     }
     public static void levelup()
     {
