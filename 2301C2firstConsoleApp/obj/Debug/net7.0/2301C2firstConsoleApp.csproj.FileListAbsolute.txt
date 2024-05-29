@@ -26,3 +26,17 @@ C:\Users\asp\source\repos\2301C2_C_sharp-main\2301C2firstConsoleApp\obj\Debug\ne
 C:\Users\asp\source\repos\2301C2_C_sharp-main\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.pdb
 C:\Users\asp\source\repos\2301C2_C_sharp-main\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.genruntimeconfig.cache
 C:\Users\asp\source\repos\2301C2_C_sharp-main\2301C2firstConsoleApp\obj\Debug\net7.0\ref\2301C2firstConsoleApp.dll
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\bin\Debug\net7.0\2301C2firstConsoleApp.exe
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\bin\Debug\net7.0\2301C2firstConsoleApp.deps.json
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\bin\Debug\net7.0\2301C2firstConsoleApp.runtimeconfig.json
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\bin\Debug\net7.0\2301C2firstConsoleApp.dll
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\bin\Debug\net7.0\2301C2firstConsoleApp.pdb
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.AssemblyInfoInputs.cache
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.AssemblyInfo.cs
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.dll
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\refint\2301C2firstConsoleApp.dll
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.pdb
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\2301C2firstConsoleApp.genruntimeconfig.cache
+C:\Users\asp\Documents\GitHub\newbatch\2301C2firstConsoleApp\obj\Debug\net7.0\ref\2301C2firstConsoleApp.dll
